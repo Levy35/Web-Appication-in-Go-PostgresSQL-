@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Music Database</title>
+  
+  <style>
+    table.people {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    table.people td, th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    table.people tr:nth-child(even){
+      background-color: #f2f2f2;
+    }
+
+    table.people tr:hover {
+      background-color: #ddd;
+    }
+
+    table.people th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4c87af;
+      color: white;
+    }
+
+    input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #4c8baf;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Music Artist</h1>
+  <table class="people">
+    <tr>
+      <th>Info</th>
+    </tr>
+  </table>
+  <br/>
+  <div>
+    <form action="/info-add" method = "POST" >  
+
+      <label>full_name:</label>
+      <input type="text" name="full_name">
+      <br/> 
+      
+      <label>Album:</label>
+      <input type="text" name="album">
+      <br/>
+      <br/>
+       
+      <label>Date Released:</label>
+      <input type="text" name="date_released">
+      <br/>
+      <br/>
+
+      <label>Genre:</label>
+      <input type="text" name="genre">
+
+
+      <label>Artist:</label>
+      <input type="text" name="artist">
+      <br/>
+
+      <input type="submit" value="Submit">
+    </form>
+
+
+    <br><br>
+
+  </div>
+  <hr>
+  <footer>
+    <p>
+      <a href="mailto:2021155034@ub.edu.bz">Levi Coc</a>
+    </p>
+    <p>
+      <a href="mailto:2018118526@ub.edu.bz">James Faber</a>
+    </p>
+  </footer>
+</body>
+</html>
